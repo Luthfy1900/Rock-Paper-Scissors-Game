@@ -29,8 +29,8 @@ function getComputerSelection() {
 
 
 
-//This is function that has code to manipulate data of the score and to display it on our game.
-//It has two parameters to define the user and the computer. In this case is for when the user wins.
+/*This is function that has code to manipulate data of the score and to display it on our game.
+It has two parameters to define the user and the computer. In this case is for when the user wins.*/
 function win(playerChoice, compChoice) {
     userScore++;    //add 1
     useScore.innerHTML = userScore; // change score on website from 0 to 1 and so on
@@ -42,8 +42,8 @@ function win(playerChoice, compChoice) {
 
 
 
-//This is function that has code to manipulate data of the score and to display it on our game.
-//It has two parameters to define the user and the computer. In this case is for when the computer wins(we lose).
+/*This is function that has code to manipulate data of the score and to display it on our game.
+It has two parameters to define the user and the computer. In this case is for when the computer wins(we lose).*/
 function lose(playerChoice, compChoice) {
     computerScore++;    //add 1
     compScore.innerHTML = computerScore;   // change score on website from 0 to 1 and so on
@@ -54,8 +54,8 @@ function lose(playerChoice, compChoice) {
 
 
 
-//This is function that has code to manipulate data of the score and to display it on our game.
-//It has two parameters to define the user and the computer.
+/*This is function that has code to manipulate data of the score and to display it on our game.
+It has two parameters to define the user and the computer.*/
 function draw(playerChoice, compChoice) {
     resultingMessage.innerHTML = playerChoice + " and " + compChoice + " are equal. It's a draw!";
 }
@@ -64,9 +64,9 @@ function draw(playerChoice, compChoice) {
 
 
 
-//This function is the actual game. It has the 'playerChoice' parameter which is us and variable that defines
-//the above function for the computer random generator. These two things will be used to compare outcomes and
-//decide who won, lost or if it's a draw. The results will be returned to the win, lose and draw functions above.
+/*This function is the actual game. It has the 'playerChoice' parameter which is us and variable that defines
+the above function for the computer random generator. These two things will be used to compare outcomes and
+decide who won, lost or if it's a draw. The results will be returned to the win, lose and draw functions above.*/
 function letsPlay(playerChoice) {
     compChoice = getComputerSelection();
     if (playerChoice === "Rock" && compChoice === "Scissors") { win(playerChoice, compChoice); }
@@ -82,9 +82,9 @@ function letsPlay(playerChoice) {
 
 
 
-//This function is created to basically create an input for the user hence we can see 'letsPlay("Rock")'
-//which tells the program to assign a "Rock" selection to the 'playerChoice' parameter in the above function, to the element
-//that has the id of "R" assigned to it. myRock is the variable name we gave that element to catch it.
+/*This function is created to basically create an input for the user hence we can see 'letsPlay("Rock")'
+which tells the program to assign a "Rock" selection to the 'playerChoice' parameter in the above function, to the element
+that has the id of "R" assigned to it. myRock is the variable name we gave that element to catch it.*/
 function theEvents() {
     myRock.addEventListener('click', () => letsPlay("Rock"));
     myScissors.addEventListener('click', () => letsPlay("Scissors"));
