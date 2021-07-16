@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="header_content">
+        <h1>Welcome to the Rock, Paper, Scissors Game</h1><br>
+    </header>
+    
+    <div class="score_board">
+        <div id="the_user" class="badge">You</div>
+        <div id="the_computer" class="badge">Comp</div>
+        <span id="the_user_score">0</span>:<span id="the_computer_score">0</span>
+    </div>
+    <div class="result_message">
+        <p>Choose your warrior:</p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="the_rock">
+            <img src="rock.png" alt=""> 
+            <p>Rock</p>
+        </div>
+        <div class="choice" id="the_scissors">
+            <img src="Scissors.png" alt=""> 
+            <p>Scissor</p>
+        </div>
+        <div class="choice" id="the_paper">
+            <img src="paper.png" alt=""> 
+            <p>Paper</p>
+        </div>
+    </div>
+    <p id="move">Begin the battle!</p>
+    <div id="mine">
+        <img id="image" src="background.jpg">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
